@@ -1,0 +1,43 @@
+<nav>
+  <a [routerLink]="['/access']" routerLinkActive="router-link-active">Siguiente</a>
+</nav>
+
+<form>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+
+  <div>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+  </div>
+
+  <div>
+    <label for="birthdate">BirthDate:</label>
+    <input type="date" id="birthdate" name="birthdate" onchange="calculateAge(this.value)">
+    <span id="age"></span>
+  </div>
+
+  <div>
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div>
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Desea recibir información de nuestra newsletter?</label>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
