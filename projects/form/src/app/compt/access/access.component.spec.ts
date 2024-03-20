@@ -11,7 +11,7 @@ describe('AccessComponent', () => {
       imports: [AccessComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(AccessComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
